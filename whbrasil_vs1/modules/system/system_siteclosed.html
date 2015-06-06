@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<title><{$lang_siteclosemsg}></title>
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/site/system/style.css" />
+
+</head>
+<body>
+<style>
+#break {
+	height: 50px;
+}
+
+form {
+    margin: 0px;
+}
+
+
+
+.button {
+	border : solid 1px #cccccc;
+	background: #E9ECEF;
+	color : #666666;
+	font-weight : bold;
+	font-size : 11px;
+	padding: 4px;
+}
+
+.login {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6em;
+	padding: 15px;
+	border: 1px solid #cccccc;
+	width: 429px;
+	background: #F1F3F5;
+}
+	
+.login h1 {
+	background: url(images/login_header.png) no-repeat;
+	background-position: left top;
+	color: #333;
+	margin: 0px;
+	height: 50px;
+	padding: 15px 4px 0 50px;
+ 	text-align: left;
+	font-size: 1.5em;
+}
+
+.login p {
+	padding: 0 1em 0 1em;
+	}
+	
+.form-block {
+	border: 1px solid #cccccc;
+	background: #E9ECEF;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.login-form {
+	text-align: left;
+	float: right;
+	width: 60%;
+}
+
+.login-text {
+	text-align: left;
+	width: 40%;
+	float: left;
+	font-family:  verdana, arial;
+	font-size: 10px;
+}
+
+.inputlabel {
+	font-weight: bold;
+	text-align: left;
+	}
+
+.inputbox {
+	width: 150px;
+	margin: 0 0 1em 0;
+	border: 1px solid #cccccc;
+	}
+
+.clr {
+    clear:both;
+    }
+
+.ctr {
+	text-align: center;
+	vertical-align: top;
+}
+
+.version {
+	font-size: 0.8em;
+}
+
+.footer {
+
+}
+
+.message {
+	margin-top: 10px; 
+	padding: 7px; 
+	width: 400px;
+	border: 1px solid #B22222;
+	background: #F1F3F5;
+	color: #B22222;	
+	font-weight: bold;
+	font-size: 13px;
+}
+</style>
+  
+
+  
+  <div id="ctr" align="center">
+  		<div class="login">
+  		<div class="login-form">
+  			<a href=<{$xoops_url}>  target="_blank" alt="<{$xoops_sitename}>"><img src="<{$xoops_imageurl}>modules/images/login.gif" alt="<{$lang_login}>" /></a>
+  			<form action="<{$xoops_url}>/user.php" method="post">
+  			<div class="form-block">
+  				<div class="inputlabel"><{$lang_username}></div>
+  				<div><input class="inputbox" size="15" type="text" name="uname" maxlength="25" value="<{$usercookie}>" /></div>
+  				<div class="inputlabel"><{$lang_password}></div>
+  				<div><input name="pass" type="password" class="inputbox" size="15" /></div>
+  				<div align="left"><input type="submit" name="submit" class="button" value="<{$lang_login}>" /></div>
+  			</div>
+     <input type="hidden" name="xoops_login" value="1" />
+
+      <input type="hidden" name="xoops_redirect" value="<{$redirect_page}>" />
+  			</form>
+  		</div>
+  		<div class="login-text">
+
+  			<div class="ctr"><img src="<{$xoops_imageurl}>modules/images/security.png" width="64" height="64" alt="security" /></div>
+              <p><{$xoops_sitename}></p>
+   			<p><{$lang_siteclosemsg}></p>
+
+
+  		</div>
+  		<div class="clr"></div>
+  	</div>
+  </div>
+<div id="break"></div>
+<center><a href="http://www.xoopsbr.org" target=_blank><img src=<{$xoops_url}>/images/poweredby.gif></a></center>
+  </body>
+</html>
